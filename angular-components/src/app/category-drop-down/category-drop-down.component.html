@@ -1,1 +1,8 @@
-<p>category-drop-down works!</p>
+<div>
+    <label for="categoryDropdown">Select a Category:</label>
+    <select id="categoryDropdown" [(ngModel)]="selectedCategory">
+        <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+    </select>
+
+    <p>Selected Category: {{ selectedCategory }}</p>
+</div>
