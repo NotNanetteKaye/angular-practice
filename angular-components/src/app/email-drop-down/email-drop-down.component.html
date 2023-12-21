@@ -1,1 +1,8 @@
-<p>email-drop-down works!</p>
+<div>
+    <label for="emailDropdown">Select a Category:</label>
+    <select id="emailDropdown" [(ngModel)]="selectedEmailCategory">
+        <option *ngFor="let category of emailCategories" [value]="category">{{ category }}</option>
+    </select>
+
+    <p>Selected Category: {{ selectedEmailCategory }}</p>
+</div>
