@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./email-drop-down.component.css']
 })
 export class EmailDropDownComponent {
-
+  // Dummy data for email dropdown 
+  emailCategories: string[] = ['Employees', 'Customers', 'Field Employees'];
+  selectedEmailCategory: string | undefined;
 }
