@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CategoryDropDownComponent } from './category-drop-down/category-drop-down.component';
 import { EmailDropDownComponent } from './email-drop-down/email-drop-down.component';
+import { EmailManagerComponent } from './email-manager/email-manager.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoryDropDownComponent,
-    EmailDropDownComponent
+    EmailDropDownComponent,
+    EmailManagerComponent
   ],
   imports: [
     BrowserModule,
